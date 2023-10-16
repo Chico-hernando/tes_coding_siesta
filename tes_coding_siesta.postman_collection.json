@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "91f50fd3-b764-4691-a951-a6e3270b5857",
+		"name": "tes siesta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10004593"
+	},
+	"item": [
+		{
+			"name": "Coding test",
+			"item": [
+				{
+					"name": "Question 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}question/1",
+							"host": [
+								"{{host}}question"
+							],
+							"path": [
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Question 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}question/2?lat=3.234587754461181&long=97.32793709754745",
+							"host": [
+								"{{host}}question"
+							],
+							"path": [
+								"2"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "3.234587754461181"
+								},
+								{
+									"key": "long",
+									"value": "97.32793709754745"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Question 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\" : \"082 345 678 901\",\r\n    \"country\" : \"singapore\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}question/3",
+							"host": [
+								"{{host}}question"
+							],
+							"path": [
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Question 4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}question/4",
+							"host": [
+								"{{host}}question"
+							],
+							"path": [
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Question 5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}question/5",
+							"host": [
+								"{{host}}question"
+							],
+							"path": [
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:8080/",
+			"type": "string"
+		}
+	]
+}
